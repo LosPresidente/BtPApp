@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_margin="16dp"
               android:orientation="vertical">
@@ -9,7 +10,7 @@
         style="?android:listSeparatorTextViewStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/crime_title_label"/>
+        android:text="Book Title (Name)" />
 
     <EditText
         android:id="@+id/crime_title"
@@ -18,20 +19,33 @@
         android:hint="@string/crime_title_hint"/>
 
     <TextView
-        style="?android:listSeparatorTextViewStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/crime_details_label"/>
+        android:text="Book Cover"
+        android:textColor="@android:color/black" />
 
-    <Button
-        android:id="@+id/crime_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="221dp"
+        android:layout_height="226dp"
+        app:srcCompat="@drawable/bible" />
 
-    <CheckBox
-        android:id="@+id/crime_solved"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
-        android:text="@string/crime_solved_label"/>
+        android:text="Price: $1"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condition: good"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sold by: [seller name] at [seller's location]"
+        android:textColor="@android:color/black" />
 
 </LinearLayout>
